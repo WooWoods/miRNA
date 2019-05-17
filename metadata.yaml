@@ -1,0 +1,31 @@
+DATADIR: /Hdisk/public/SRAdata/files
+SAMPLES:
+  - ERR2707350
+  - ERR2707351
+  - ERR2707352
+  - ERR2707358
+  - ERR2707359
+  - ERR2707360
+
+GROUPS:
+  Tumor-VS-Normal:
+    - ERR2707358,ERR2707359,ERR2707360
+    - ERR2707350,ERR2707351,ERR2707352
+
+ADAPTER3: TGGAATTCTCGG
+
+OUTPUT: /Hdisk/public/output/RNA-Seq
+REPORT: /home/woods/project/RNA/
+
+THREADS:
+  FASTP: 5
+  CUTADAPTER: 5
+  MAPPING: 5
+
+REF:
+    GENOME: /Hdisk/database/human/hg38/genome/bowtie_idx/hg38.fa
+    RFAM: /Hdisk/database/human/hg38/Rfam/Rfam_for_miRDeep.fa
+    MATURE: /Hdisk/database/human/hg38/microRNA/hsa.mature.fa
+    HAIRPIN: /Hdisk/database/human/hg38/microRNA/hsa.hairpin.fa
+    M2P: /Hdisk/database/human/hg38/microRNA/mature_mapped.bwt
+
